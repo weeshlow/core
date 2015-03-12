@@ -46,6 +46,7 @@
         "kriswallsmith/assetic": "1.3.2",
         "sabre/dav": "3.0.9",
         "symfony/polyfill-php70": "^1.0",
-        "lukasreschke/id3parser": "^0.0.1"
+        "lukasreschke/id3parser": "^0.0.1",
+        "doctrine/migrations": "^1.4"
     }
 }
