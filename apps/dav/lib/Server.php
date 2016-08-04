@@ -178,6 +178,10 @@ class Server {
 						$this->server->tree, \OC::$server->getTagManager()
 					)
 				);
+
+				//TODO:verify if this is a proper place for the plugin
+				$this->server->addPlugin(
+					new \OCA\DAV\Files\BundlingPlugin($view));
 			}
 		});
 	}
