@@ -38,8 +38,9 @@ $groupManager = OC::$server->getGroupManager();
 
 $app = \OC_Mount_Config::$app;
 
-$globalStorageService = $app->getContainer()->query('\OCA\Files_External\Service\GlobalStoragesService');
-$userStorageService = $app->getContainer()->query('\OCA\Files_External\Service\UserStoragesService');
+$globalStorageService = OC::$server->getGlobalStoragesService();
+$userStorageService = OC::$server->getUserStoragesService();
+// TODO
 $importLegacyStorageService = $app->getContainer()->query('\OCA\Files_External\Service\ImportLegacyStoragesService');
 $backendService = OC::$server->getStoragesBackendService();
 
