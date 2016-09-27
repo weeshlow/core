@@ -179,7 +179,7 @@ abstract class TestCase extends \Test\TestCase {
 	 * reset init status for the share storage
 	 */
 	protected static function resetStorage() {
-		$storage = new \ReflectionClass('\OC\Files\Storage\Shared');
+		$storage = new \ReflectionClass(\OC\Files\Storage\Shared::class);
 		$isInitialized = $storage->getProperty('initialized');
 		$isInitialized->setAccessible(true);
 		$isInitialized->setValue($storage, false);
