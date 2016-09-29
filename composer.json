@@ -47,6 +47,6 @@
         "sabre/dav": "3.0.9",
         "symfony/polyfill-php70": "^1.0",
         "lukasreschke/id3parser": "^0.0.1",
-        "doctrine/migrations": "^1.4"
+        "doctrine/migrations": "v1.2.2"
     }
 }
